@@ -7,7 +7,7 @@ const env = process.env.NODE_ENV;
 module.exports = {
   mode: process.env.NODE_ENV,
 
-  entry: './src/js/main.js',
+  entry: './src/ts/main.ts',
 
   output: {
     publicPath: '/',
@@ -25,13 +25,22 @@ module.exports = {
   module: {
     rules: [
 
+      // {
+      //   test: /\.js$/,
+      //   exclude: /node_modules/,
+      //   use: {
+      //     loader: 'babel-loader'
+      //   }
+      // },
       {
-        test: /\.js$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
+          loader: 'ts-loader'
         }
       },
+
+      
 
       {
         test: /\.(sa|sc|c)ss$/,
@@ -59,6 +68,10 @@ module.exports = {
 				}
 			},
     ],
+  },
+
+  resolve: {
+    extensions: ['.ts', '.js', '.tsx']
   },
 
   plugins: [

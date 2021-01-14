@@ -11,36 +11,36 @@
 
 <body class="font-sans bg-gray-100">
   <div class="wrapper m-auto max-w-5xl">
-    <h1 class=" text-center">Finance Logger</h1>
+    <h1 class=" text-center text-red-600 my-10 text-3xl">Finance Logger</h1>
 
-    <ul class="item-list">
+    <ul class="item-list p-0 list-none">
 
     </ul>
 
   </div>
 
-  <footer>
-    <form action="" class="new-item-form">
-      <div class="field">
-        <label>Type:</label>
-        <select name="" id="type">
+  <footer class=" bg-gray-300 p-14 mt-16">
+    <form action="" class="new-item-form max-w-5xl m-auto text-left lg:flex lg:justify-between lg:items-center">
+      <div class="field inline-block">
+        <label class=" block font-bold text-xs my-4 ml-1">Type:</label>
+        <select name="" id="type" class="rounded">
           <option value="invoice">invoice</option>
           <option value="payment">Payment</option>
         </select>
       </div>
       <div class="field">
-        <label>To / From:</label>
-        <input type="text" id="tofrom">
+        <label class=" block font-bold text-xs my-4 ml-1">To / From:</label>
+        <input type="text" id="tofrom" class="rounded">
       </div>
       <div class="field">
-        <label>Details:</label>
-        <input type="text" id="details">
+        <label class=" block font-bold text-xs my-4 ml-1">Details:</label>
+        <input type="text" id="details" class="rounded">
       </div>
       <div class="field">
-        <label>Amount (£):</label>
-        <input type="text" id="amount">
+        <label class=" block font-bold text-xs my-4 ml-1">Amount (£):</label>
+        <input type="text" id="amount" class="rounded">
       </div>
-      <button>Add</button>
+      <button class=" text-white block bg-green-500 rounded w-24 p-2 mx-0 my-8  lg:my-0 lg:self-end">Add</button>
     </form>
   </footer>
 </body>

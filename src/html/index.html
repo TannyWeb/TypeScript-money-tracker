@@ -2,20 +2,47 @@
 <html lang="en">
 
 <head>
-  <title>Webpack starter template</title>
+  <title>Finance logger</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Alex Canana">
-  <meta name="description" content="Webpack starter template">
+  <meta name="author" content="Tanvir Ali">
+  <meta name="description">
 </head>
 
 <body class="font-sans bg-gray-100">
-  <div class="min-h-screen flex items-center justify-center">
-    <h1 class="text-3xl font-bold text-blue-900">Let's get this party started!</h1>
+  <div class="wrapper m-auto max-w-5xl">
+    <h1 class=" text-center">Finance Logger</h1>
 
-    <p>how fast are you really?</p>
-    <img src="../src/imgs/avatar.jpg" alt="" srcset="">
+    <ul class="item-list">
+
+    </ul>
+
   </div>
+
+  <footer>
+    <form action="" class="new-item-form">
+      <div class="field">
+        <label>Type:</label>
+        <select name="" id="type">
+          <option value="invoice">invoice</option>
+          <option value="payment">Payment</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>To / From:</label>
+        <input type="text" id="tofrom">
+      </div>
+      <div class="field">
+        <label>Details:</label>
+        <input type="text" id="details">
+      </div>
+      <div class="field">
+        <label>Amount (£):</label>
+        <input type="text" id="amount">
+      </div>
+      <button>Add</button>
+    </form>
+  </footer>
 </body>
 
 </html>
